@@ -1,0 +1,19 @@
+<nav class="navbar bg-dark border-bottom border-body">
+  <div class="container-fluid">
+    <h3 class="text-light">ShareCODE</h3>
+    <form>
+      <div class="d-flex align-items-center mx-2">
+        <label class="switch">
+          <input [checked]="isDarkMode" (change)="toggleDarkMode($event)" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <span><i class="fa fa-2x" [ngClass]="isDarkMode ? 'fa-sun-o' : 'fa-moon-o'" aria-hidden="true"></i></span>
+      </div>
+    </form>
+  </div>
+</nav>
+<div class="main-editor">
+  <div  class="first textarea-wrapper" contenteditable>
+    <textarea placeholder="Write or paste code here to share it with oders" [class.dark]="isDarkMode" class="ql-syntax" [(ngModel)]="code" (ngModelChange)="updateCode()"></textarea>
+  </div>
+</div>
