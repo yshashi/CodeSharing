@@ -196,7 +196,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const config = {
-  url: 'http://localhost:3000',
+  url: 'https://code-sharing-yshashi.vercel.app/',
   options: {}
 };
 let AppModule = /*#__PURE__*/(() => {
