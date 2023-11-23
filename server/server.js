@@ -5,13 +5,17 @@ const socketIO = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
+const path = require('path');
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://code-sharing-nu.vercel.app',
+    origin: 'https://code-sharing.adaptable.app',
     credentials: true
 }));
 
-// app.use(express.static(__dirname + '/dist'));
+// Serve Angular app
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Serve Angular app for any other route
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
