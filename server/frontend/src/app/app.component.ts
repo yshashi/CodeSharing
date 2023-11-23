@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { Socket } from 'ngx-socket-io';
-const SERVER_URL = 'http://localhost:3000';
+export const SERVER_URL = 'http://localhost:3000/';
+export const LIVE_URL = 'https://code-sharing-yshashi.vercel.app/';
 declare var CodeJar: any;
 declare var hljs: any;
 declare var Prism: any;

@@ -48,7 +48,9 @@ let AppRoutingModule = /*#__PURE__*/(() => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AppComponent: () => (/* binding */ AppComponent)
+/* harmony export */   AppComponent: () => (/* binding */ AppComponent),
+/* harmony export */   LIVE_URL: () => (/* binding */ LIVE_URL),
+/* harmony export */   SERVER_URL: () => (/* binding */ SERVER_URL)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 5879);
 /* harmony import */ var ngx_socket_io__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-socket-io */ 9062);
@@ -59,7 +61,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const SERVER_URL = 'http://localhost:3000';
+const SERVER_URL = 'http://localhost:3000/';
+const LIVE_URL = 'https://code-sharing-yshashi.vercel.app/';
 let AppComponent = /*#__PURE__*/(() => {
   class AppComponent {
     constructor() {
@@ -196,7 +199,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const config = {
-  url: 'https://code-sharing-yshashi.vercel.app/',
+  url: _app_component__WEBPACK_IMPORTED_MODULE_1__.LIVE_URL,
   options: {}
 };
 let AppModule = /*#__PURE__*/(() => {
