@@ -5,6 +5,10 @@ const socketIO = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
+const cors = require('cors');
+app.use(cors({
+    origin: 'https://code-sharing-nu.vercel.app'
+}));
 
 app.use(express.static(__dirname + '/dist'));
 
