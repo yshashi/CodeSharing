@@ -62,7 +62,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const SERVER_URL = 'http://localhost:3000/';
-const LIVE_URL = 'https://code-sharing-yshashi.vercel.app/';
+const LIVE_URL = 'https://code-sharing.adaptable.app';
 let AppComponent = /*#__PURE__*/(() => {
   class AppComponent {
     constructor() {
