@@ -1,7 +1,60 @@
 // /* You can add global styles to this file, and also import other style files */
 // @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Mono&display=swap");
 // @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css");
+@import './assets/css/quill.snow.css';
 
+.ql-container {
+    height: 500px !important;
+}
+
+.ql-syntax {
+    position: relative;
+    width: 100%;
+    background: #eff6ff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+    overflow: auto;
+    color: #032e7a;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Inconsolata, PT mono, Roboto mono, Space mono, monospace;
+    line-height: 1.5;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
+
+.dark .ql-syntax {
+    position: relative;
+    width: 100%;
+    background: #181823;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: auto;
+    color: #032e7a;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Inconsolata, PT mono, Roboto mono, Space mono, monospace;
+    line-height: 1.5;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
 // body {
 //   background-image: linear-gradient(109.6deg,
 //       rgba(253, 199, 141, 1) 11.3%,

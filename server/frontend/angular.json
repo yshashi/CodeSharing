@@ -42,6 +42,7 @@
             "outputPath": "../dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "sourceMap": true,
             "optimization": {
               "scripts": false,
               "styles": {

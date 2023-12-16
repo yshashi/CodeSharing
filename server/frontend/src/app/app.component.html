@@ -13,7 +13,10 @@
   </div>
 </nav>
 <div class="main-editor">
-  <div  class="first textarea-wrapper" contenteditable>
-    <textarea placeholder="Write or paste code here to share it with oders" [class.dark]="isDarkMode" class="ql-syntax" [(ngModel)]="code" (ngModelChange)="updateCode()"></textarea>
+  <div  class="first textarea-wrapper">
+    <quill-editor #quill (onSelectionChanged)="onSelectionChanged($event)"
+  (ngModelChange)="onContentChanged($event)" [classes]="'ql-container ql-height'" [(ngModel)]="code">
+    </quill-editor>
+    <!-- <textarea placeholder="Write or paste code here to share it with oders" [class.dark]="isDarkMode" class="ql-syntax" [(ngModel)]="code" (ngModelChange)="updateCode()"></textarea> -->
   </div>
 </div>

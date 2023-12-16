@@ -25,6 +25,7 @@ io.on('connection', (socket) => {
 
     // Handle code updates
     socket.on('updateCode', (code) => {
+        console.log(code)
         // Broadcast the updated code to all connected clients
         io.emit('updatedCode', code);
     });
