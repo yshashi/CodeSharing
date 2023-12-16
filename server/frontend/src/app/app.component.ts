@@ -2,7 +2,7 @@ import { Component, HostListener, OnInit, ViewChild, inject } from '@angular/cor
 import { Socket } from 'ngx-socket-io';
 import Quill from 'quill';
 export const SERVER_URL = 'http://localhost:3000/';
-export const LIVE_URL = 'https://code-sharing.adaptable.app';
+export const LIVE_URL = 'https://code-sharing-bm2k.onrender.com';
 
 
 @Component({

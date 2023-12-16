@@ -8,7 +8,7 @@ const io = socketIO(server);
 const path = require('path');
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://code-sharing.adaptable.app',
+    origin: 'https://code-sharing-bm2k.onrender.com',
     credentials: true
 }));
 
